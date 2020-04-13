@@ -148,6 +148,10 @@ body {
   font-display: swap;
   src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIvoA.ttf) format('truetype');
 }
+.header-container {
+  width: 80%;
+  background-color: #718731;
+}
 h1 {
   color: #6f7d88;
 }
