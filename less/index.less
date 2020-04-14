@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +54,111 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Varela+Round&display=swap');
+
+@image-width: 200px;
+@image-height: 200px;
+@image-bdc: #0dc2b3;
+@main-width: 100%;
+// @image-bg: url("images/its_me.jpg" alt="photo of greg");
+@main-height: 200px;
+@heading-bgc: #b4bb72;
+@side-width: 20%;
+@side-height: 1400px;
+@side-bgc: #e7eaa8;
+@h1-font-size: 3rem;
+@line-height: 2;
+@main-color: #203324;
+@main-font:  'Varela Round', sans-serif;
+@heading-font: 'montserrat', san-serif;
+//side content
+@work-width: 80%;
+@work-height: 500px;
+@work-bgc: #595959;
+
+.container{
+	// display: flex;
+}
+
+main {
+	display: flex;
+}
+
+.header-container {
+width: @main-width;
+height: @main-height;
+padding: 50px;
+background-color: @heading-bgc;
+display: flex;
+justify-content: space-around;
+justify-content: center;
+
+}
+
+h1 {
+color: @main-color;
+font-family: @heading-font;
+font-size: @h1-font-size;
+display: flex;
+justify-content: center;
+
+}
+
+h2 {
+	font-family: @main-font;
+	font-size: 1.5rem;
+	line-height: 2.5;
+}
+
+.image-container {
+	margin: -120px 0 0 50px;
+width: @image-width;
+height: @image-height;
+position: absolute;
+z-index: 2;
+background-image: url("itsme.jpg");
+background-color: @image-bdc;
+border-radius: 10px;
+
+}
+
+.side-container {
+margin: 0 0 60px 20px;
+width: @side-width;
+height: @side-height;
+background-color: @side-bgc;
+
+}
+
+img {
+	width:200px;
+	height:200px;
+}
+
+.side-content {
+	font-family: @main-font;
+	margin-top: -50px;
+	padding: 60% 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	align-content: space-around;
+	align-content: space-around;
+}
+
+.right-container {
+	width: @work-width;
+	height: @work-height;
+	// margin: 0 -180px -500px 0;
+	padding: 40px;
+	display: flex;
+    flex-direction: column;
+	background-color: @work-bgc;
+
+}
+
+//
