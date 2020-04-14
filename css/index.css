@@ -134,3 +134,39 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3D-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIvoA.ttf) format('truetype');
+}
+.header-container {
+  width: 80%;
+  height: 70px;
+  margin: 30px;
+  padding: 50px;
+  background-color: #b4bb72;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+h1 {
+  color: #f6faf7;
+  font-family: 'montserrat', san-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.side-container {
+  width: 20%;
+  height: 500px;
+  background-color: #e7eaa8;
+}

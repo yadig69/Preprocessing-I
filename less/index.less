@@ -60,21 +60,43 @@ html, body {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Varela+Round&display=swap');
 
 @main-width: 80%;
-@heading-bgc: #718731;
-@main-color: #6f7d88;
+@main-height: 70px;
+@heading-bgc: #b4bb72;
+@side-width: 20%;
+@side-bgc: #e7eaa8;
+@h1-font-size: 3rem;
+@main-color: #f6faf7;
+@side-height: 500px;
 @main-font: 'varela', san-serif;
 @heading-font: 'montserrat', san-serif;
 
 .header-container {
- width: @main-width;
- background-color: @heading-bgc;
+width: @main-width;
+height: @main-height;
+margin: 30px;
+padding: 50px;
+background-color: @heading-bgc;
+display: flex;
+justify-content: space-around;
+justify-content: center;
+
+
+
 }
 
 h1 {
-	color: @main-color;
+color: @main-color;
+font-family: @heading-font;
+font-size: @h1-font-size;
+display: flex;
+justify-content: center;
 
+}
 
-	// display: flex;
+.side-container {
+width: @side-width;
+height: @side-height;
+background-color: @side-bgc;
 }
 
 //
