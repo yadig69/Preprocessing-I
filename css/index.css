@@ -165,18 +165,40 @@ h1 {
   justify-content: center;
 }
 .image-container {
-  width: 50px;
+  margin: -120px 0 0 50px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  background-image: url("itsme.jpg");
+  background-color: #0dc2b3;
+  border-radius: 10px;
 }
 .side-container {
   margin: 0 0 60px 20px;
   width: 20%;
-  height: 1000px;
+  height: 1400px;
   background-color: #e7eaa8;
 }
+img {
+  width: 200px;
+  height: 200px;
+}
 .side-content {
-  padding: 20px;
+  font-family: 'Varela+Round', san-serif;
+  margin-top: -50px;
+  padding: 60% 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
   align-content: space-around;
+}
+.right-container {
+  width: 80%;
+  height: 500px;
+  margin: 0 -180px -500px 0;
+  padding: 40px;
+  display: flex;
+  background-color: #595959;
 }
