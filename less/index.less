@@ -72,7 +72,7 @@ html, body {
 @h1-font-size: 3rem;
 @line-height: 2;
 @main-color: #203324;
-@main-font: 'Varela+Round', san-serif;
+@main-font:  'Varela Round', sans-serif;
 @heading-font: 'montserrat', san-serif;
 //side content
 @work-width: 80%;
@@ -80,7 +80,11 @@ html, body {
 @work-bgc: #595959;
 
 .container{
-	
+	// display: flex;
+}
+
+main {
+	display: flex;
 }
 
 .header-container {
@@ -101,6 +105,12 @@ font-size: @h1-font-size;
 display: flex;
 justify-content: center;
 
+}
+
+h2 {
+	font-family: @main-font;
+	font-size: 1.5rem;
+	line-height: 2.5;
 }
 
 .image-container {
@@ -143,10 +153,10 @@ img {
 .right-container {
 	width: @work-width;
 	height: @work-height;
-	margin: 0 -180px -500px 0;
+	// margin: 0 -180px -500px 0;
 	padding: 40px;
 	display: flex;
-
+    flex-direction: column;
 	background-color: @work-bgc;
 
 }

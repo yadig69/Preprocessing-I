@@ -148,6 +148,9 @@ body {
   font-display: swap;
   src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIvoA.ttf) format('truetype');
 }
+main {
+  display: flex;
+}
 .header-container {
   width: 100%;
   height: 200px;
@@ -163,6 +166,11 @@ h1 {
   font-size: 3rem;
   display: flex;
   justify-content: center;
+}
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5;
 }
 .image-container {
   margin: -120px 0 0 50px;
@@ -185,7 +193,7 @@ img {
   height: 200px;
 }
 .side-content {
-  font-family: 'Varela+Round', san-serif;
+  font-family: 'Varela Round', sans-serif;
   margin-top: -50px;
   padding: 60% 20px 20px;
   display: flex;
@@ -197,8 +205,8 @@ img {
 .right-container {
   width: 80%;
   height: 500px;
-  margin: 0 -180px -500px 0;
   padding: 40px;
   display: flex;
+  flex-direction: column;
   background-color: #595959;
 }
