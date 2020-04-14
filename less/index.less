@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -59,21 +59,23 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Varela+Round&display=swap');
 
-@main-width: 80%;
-@main-height: 70px;
+@image-width: 50px;
+@main-width: 100%;
+// @image-bg: url("images/its_me.jpg" alt="photo of greg");
+@main-height: 200px;
 @heading-bgc: #b4bb72;
 @side-width: 20%;
+@side-height: 1000px;
 @side-bgc: #e7eaa8;
 @h1-font-size: 3rem;
-@main-color: #f6faf7;
-@side-height: 500px;
+@line-height: 2;
+@main-color: #203324;
 @main-font: 'varela', san-serif;
 @heading-font: 'montserrat', san-serif;
 
 .header-container {
 width: @main-width;
 height: @main-height;
-margin: 30px;
 padding: 50px;
 background-color: @heading-bgc;
 display: flex;
@@ -93,10 +95,32 @@ justify-content: center;
 
 }
 
+.image-container {
+width: @image-width;
+
+}
+
 .side-container {
+	margin: 0 0 60px 20px;
+
 width: @side-width;
 height: @side-height;
 background-color: @side-bgc;
+}
+
+.side-content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// align-items: center;
+	align-content: space-around;
+	align-content: space-around;
+
+
+
+
+
 }
 
 //
